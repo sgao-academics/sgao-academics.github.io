@@ -3,159 +3,291 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shuaidong Gao — Independent researcher in causal discovery, graph learning, and computational genomics.">
 <title>Shuaidong Gao — Independent Researcher</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Georgia', 'Times New Roman', serif; background: #fafaf8; color: #1a1a1a; line-height: 1.7; }
-.container { max-width: 820px; margin: 0 auto; padding: 60px 24px; }
-.header { text-align: center; margin-bottom: 48px; }
-.header h1 { font-size: 2.2em; letter-spacing: -0.5px; margin-bottom: 6px; }
-.header .subtitle { font-size: 1.05em; color: #555; font-style: italic; }
-.header .contact { font-size: 0.9em; color: #777; margin-top: 8px; }
-.header .contact a { color: #2c6fce; text-decoration: none; }
-.section { margin-bottom: 40px; }
-.section h2 { font-size: 1.35em; border-bottom: 2px solid #e0d8c8; padding-bottom: 6px; margin-bottom: 16px; letter-spacing: -0.3px; }
-.laws { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-bottom: 24px; }
-.law-card { background: #fff; border: 1px solid #e8e3d8; border-radius: 6px; padding: 16px; text-align: center; }
-.law-card .num { font-size: 2em; font-weight: bold; color: #c0392b; }
-.law-card .name { font-weight: bold; font-size: 0.95em; margin: 4px 0; }
-.law-card .eq { font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; }
-.sota-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.sota-card { background: #fff; border: 1px solid #e8e3d8; border-radius: 6px; padding: 14px; }
-.sota-card .num { font-size: 1.5em; font-weight: bold; color: #2c6fce; float: right; margin-left: 10px; }
-.sota-card .title { font-weight: bold; font-size: 0.95em; }
-.sota-card .detail { font-size: 0.85em; color: #555; margin-top: 4px; }
-.paper-list { list-style: none; }
-.paper-list li { padding: 6px 0; border-bottom: 1px dotted #ddd; font-size: 0.95em; }
-.paper-list li:last-child { border: none; }
-.paper-list .tag { display: inline-block; color: #fff; font-size: 0.7em; padding: 1px 7px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
-.paper-list .tag.main { background: #2c6fce; }
-.paper-list .tag.math { background: #8e44ad; }
-.paper-list .tag.open { background: #c0392b; }
-.paper-list .tag.causal { background: #e67e22; }
-.paper-list .tag.ogb { background: #27ae60; }
-.paper-list a { color: #2c6fce; text-decoration: none; }
-.framework-timeline { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
-.fw { font-size: 0.85em; padding: 6px 10px; background: #f8f6f0; border-left: 4px solid #2c6fce; border-radius: 3px; }
-.fw .gen { font-weight: bold; color: #2c6fce; }
-.footer { text-align: center; color: #aaa; font-size: 0.8em; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0d8c8; }
-.footer a { color: #2c6fce; }
+  :root {
+    --bg: #ffffff;
+    --text: #222222;
+    --muted: #666666;
+    --link: #1a56db;
+    --border: #e0e0e0;
+    --accent: #f5f5f5;
+    --max-w: 760px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 56px 24px 40px; }
+
+  /* Header */
+  .header { margin-bottom: 44px; }
+  .header h1 { font-size: 1.7em; font-weight: 600; margin-bottom: 4px; letter-spacing: -0.3px; }
+  .header .affil { font-size: 0.95em; color: var(--muted); margin-bottom: 8px; }
+  .header .links { font-size: 0.9em; color: var(--muted); }
+  .header .links a { color: var(--link); text-decoration: none; }
+  .header .links a:hover { text-decoration: underline; }
+  .header .sep { color: #ccc; margin: 0 6px; }
+
+  /* Sections */
+  .section { margin-bottom: 40px; }
+  .section h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1.5px solid var(--border);
+    padding-bottom: 5px;
+    margin-bottom: 14px;
+    letter-spacing: -0.2px;
+  }
+  .section p { font-size: 0.93em; margin-bottom: 10px; color: #333; }
+
+  /* Highlights grid */
+  .hl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .hl-card {
+    background: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 14px 16px;
+  }
+  .hl-card .metric { font-size: 1.15em; font-weight: 700; color: var(--link); margin-bottom: 2px; }
+  .hl-card .title { font-size: 0.87em; font-weight: 600; margin-bottom: 3px; }
+  .hl-card .desc { font-size: 0.82em; color: var(--muted); line-height: 1.5; }
+
+  /* Publications */
+  .pub { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.93em; }
+  .pub:last-child { border: none; }
+  .pub .pub-title { font-weight: 600; }
+  .pub .pub-meta { font-size: 0.87em; color: var(--muted); margin-top: 2px; }
+  .pub .pub-status {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: 600;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .status-review { background: #dbeafe; color: #1e40af; }
+  .status-submit { background: #fef3c7; color: #92400e; }
+  .status-prep   { background: #f3e8ff; color: #6b21a8; }
+  .status-patent  { background: #fce7f3; color: #9d174d; }
+  .pub a { color: var(--link); text-decoration: none; font-size: 0.85em; }
+  .pub a:hover { text-decoration: underline; }
+
+  /* CAGate versions compact */
+  .ver-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px 12px; margin-top: 8px; }
+  .ver { font-size: 0.82em; padding: 3px 0; color: #444; }
+  .ver b { color: var(--link); }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.78em;
+    color: #aaa;
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .hl-grid { grid-template-columns: 1fr; }
+    .ver-grid { grid-template-columns: 1fr 1fr; }
+    .container { padding: 36px 16px 32px; }
+  }
 </style>
 </head>
 <body>
 <div class="container">
 
+<!-- ============================================================ -->
+<!--  HEADER                                                       -->
+<!-- ============================================================ -->
 <div class="header">
-  <h1>Shuaidong Gao &nbsp;高帅东</h1>
-  <div class="subtitle">Independent Researcher · Causal Discovery · Graph Learning · Innovation Economics</div>
-  <div class="contact">
-    gsd3247186514@gmail.com &nbsp;·&nbsp;
-    <a href="https://orcid.org/0009-0004-5641-3581">ORCID</a> &nbsp;·&nbsp;
-    <a href="https://github.com/gsd3247186514-cell">GitHub</a> &nbsp;·&nbsp;
-    Chongqing, China
+  <h1>Shuaidong Gao &nbsp;&#39640;&#24069;&#19996;</h1>
+  <div class="affil">
+    Independent Researcher &#183; Chongqing, China
+  </div>
+  <div class="links">
+    <a href="mailto:gsd3247186514@gmail.com">gsd3247186514@gmail.com</a>
+    <span class="sep">&#183;</span>
+    <a href="https://orcid.org/0009-0004-5641-3581">ORCID</a>
+    <span class="sep">&#183;</span>
+    <a href="https://github.com/gsd3247186514-cell">GitHub</a>
   </div>
 </div>
 
+<!-- ============================================================ -->
+<!--  ABOUT / BIO                                                  -->
+<!-- ============================================================ -->
 <div class="section">
-  <h2>SOTA Highlights</h2>
-  <div class="sota-grid">
-    <div class="sota-card">
-      <div class="num">100%</div>
-      <div class="title">TCGA Cancer Causal Discovery</div>
-      <div class="detail">CA-Gate outperforms NOTEARS across ALL 33 cancer types. ARID1A→MTOR validated (OV: β=0.454, LUSC: β=0.549).</div>
+  <h2>About</h2>
+  <p>
+    I am an independent researcher working on <strong>causal structure learning</strong>,
+    <strong>graph neural networks</strong>, and their applications in computational genomics
+    and innovation economics. My work focuses on making high-dimensional causal discovery
+    tractable through cluster-aware differentiable optimization.
+  </p>
+  <p>
+    I hold a degree from Chongqing Institute of Foreign Studies (&#37325;&#24198;&#22806;&#35821;&#22806;&#20107;&#23398;&#38498;). My research is self-directed
+    and self-funded, driven by the belief that rigorous causal methodology can bridge
+    the gap between machine learning and scientific discovery.
+  </p>
+</div>
+
+<!-- ============================================================ -->
+<!--  RESEARCH HIGHLIGHTS                                          -->
+<!-- ============================================================ -->
+<div class="section">
+  <h2>Research Highlights</h2>
+  <div class="hl-grid">
+    <div class="hl-card">
+      <div class="metric">33/33 cancer types</div>
+      <div class="title">Causal Discovery in TCGA</div>
+      <div class="desc">CAGate outperforms NOTEARS across all 33 cancers. Mean &#916; = +158 edges. Validated ARID1A&#8594;MTOR (OV: &#946;=0.454, LUSC: &#946;=0.549).</div>
     </div>
-    <div class="sota-card">
-      <div class="num">rank ~27</div>
-      <div class="title">OGB-arxiv Node Classification</div>
-      <div class="detail">val=0.7581 on consumer GPU (RTX 5060 8GB). Cluster-Aware Mixture of Graph Experts w/ GIANT. 6M params.</div>
-    </div>
-    <div class="sota-card">
-      <div class="num">d=19,215</div>
+    <div class="hl-card">
+      <div class="metric">d = 19,215</div>
       <div class="title">Genome-Scale Causal Discovery</div>
-      <div class="detail">LowRankGNN: full human genome in 26 min. F1=0.891. 10,000× faster than NOTEARS.</div>
+      <div class="desc">LowRankGNN completes full human genome inference in 26 minutes (F1=0.891), 10,000&#215; faster than NOTEARS.</div>
     </div>
-    <div class="sota-card">
-      <div class="num">5 modalities</div>
+    <div class="hl-card">
+      <div class="metric">5 modalities</div>
       <div class="title">Phase Transition Universality</div>
-      <div class="detail">n_crit = 6.27×d^0.902 (R²=0.985). Cross-validated: cancer, MNIST, CIFAR-10, PBMC, 20Newsgroups.</div>
+      <div class="desc">n_crit = 6.27&#215;d<sup>0.902</sup> (R&#178;=0.985). Cross-validated on cancer, MNIST, CIFAR-10, PBMC, 20Newsgroups.</div>
+    </div>
+    <div class="hl-card">
+      <div class="metric">rank ~27</div>
+      <div class="title">OGB-arxiv Node Classification</div>
+      <div class="desc">Cluster-Aware Mixture of Graph Experts on consumer GPU (RTX 5060 8GB). Val accuracy 0.7581. 6M parameters.</div>
     </div>
   </div>
 </div>
 
+<!-- ============================================================ -->
+<!--  CAGATE FRAMEWORK                                             -->
+<!-- ============================================================ -->
 <div class="section">
-  <h2>CDSM: Causal Differentiable Structural Modeling (V2–V10)</h2>
-  <p style="font-size:0.95em;">
-    A universal causal engine evolving through 10 generations. Originally built for gene regulatory network inference,
-    now spanning causal discovery, node classification, multi-modal fusion, and genome-scale computation.
-    <a href="https://github.com/gsd3247186514-cell/cdsm">[repo]</a>
+  <h2>Causal Differentiable Structural Modeling (CDSM)</h2>
+  <p>
+    A unified causal engine evolving through 10 generations, from gene regulatory network
+    inference to genome-scale causal discovery. <a href="https://github.com/gsd3247186514-cell/cdsm">[code]</a>
   </p>
-  <div class="framework-timeline">
-    <div class="fw"><span class="gen">V2 CAGate</span> — Cluster-Aware Gradient Gating</div>
-    <div class="fw"><span class="gen">V3 SSCAGate</span> — Spectral Clustering Gate</div>
-    <div class="fw"><span class="gen">V4 MM-CDSM</span> — Multi-Modal Causal Fusion</div>
-    <div class="fw"><span class="gen">V5 Causal Transformer</span> — Self-Attention DAG</div>
-    <div class="fw"><span class="gen">V6 LowRankGNN</span> — W=U·Vᵀ Decomposition</div>
-    <div class="fw"><span class="gen">V7 Bias-Variance Theory</span> — n_crit Proof</div>
-    <div class="fw"><span class="gen">V8 Engine V2</span> — 7 Innovations Production</div>
-    <div class="fw"><span class="gen">V9 Cross-Domain</span> — OGB-arxiv Verified</div>
-    <div class="fw"><span class="gen">V10 Arsenal</span> — 108-Model Ensemble</div>
+  <div class="ver-grid">
+    <div class="ver"><b>V2 CAGate</b> &#8212; Cluster-Aware Gradient Gating</div>
+    <div class="ver"><b>V3 SSCAGate</b> &#8212; Spectral Clustering Gate</div>
+    <div class="ver"><b>V4 MM-CDSM</b> &#8212; Multi-Modal Causal Fusion</div>
+    <div class="ver"><b>V5 Causal Transformer</b> &#8212; Self-Attention DAG</div>
+    <div class="ver"><b>V6 LowRankGNN</b> &#8212; W = U&#183;V<sup>T</sup> Decomposition</div>
+    <div class="ver"><b>V7 Theory</b> &#8212; n_crit Proof (Bias-Variance)</div>
+    <div class="ver"><b>V8 Engine V2</b> &#8212; Production Optimization</div>
+    <div class="ver"><b>V9 Cross-Domain</b> &#8212; OGB-arxiv Benchmark</div>
+    <div class="ver"><b>V10 Arsenal</b> &#8212; 108-Model Ensemble</div>
   </div>
 </div>
 
+<!-- ============================================================ -->
+<!--  PUBLICATIONS                                                 -->
+<!-- ============================================================ -->
 <div class="section">
-  <h2>Gao's Three Laws of Innovation Lock-in</h2>
-  <div class="laws">
-    <div class="law-card">
-      <div class="num">I</div>
-      <div class="name">Fiscal Channel Monopoly</div>
-      <div class="eq">&part;I/&part;D |<sub>S&T</sub> = 0</div>
-      <div style="font-size:0.8em;color:#777;margin-top:4px;">111-country verified</div>
-    </div>
-    <div class="law-card">
-      <div class="num">II</div>
-      <div class="name">Government Damping</div>
-      <div class="eq">&part;&sup2;I/&part;D&part;G &lt; 0</div>
-      <div style="font-size:0.8em;color:#777;margin-top:4px;">15 proofs · 5 frameworks</div>
-    </div>
-    <div class="law-card">
-      <div class="num">III</div>
-      <div class="name">Marketization Sorting</div>
-      <div class="eq">&part;IQI/&part;D |<sub>Core</sub> &gt; 0</div>
-      <div style="font-size:0.8em;color:#777;margin-top:4px;">Differential geometry proof</div>
+  <h2>Publications &amp; Preprints</h2>
+
+  <div class="pub">
+    <span class="pub-title">Cluster-Aware Gating for Differentiable Causal Discovery in Cancer Genomics</span>
+    <span class="pub-status status-review">Under Review</span>
+    <div class="pub-meta">
+      S. Gao (2026). Submitted to <em>Bioinformatics</em>.
+      <a href="https://github.com/gsd3247186514-cell/CAGate">[code &amp; replication]</a>
     </div>
   </div>
-  <p style="font-size:0.9em;color:#555;">
-    <strong>Gao's Innovation Trilemma</strong> (Open Conjecture): No policy can simultaneously maximize innovation quantity, quality, and spatial equality.
-    <a href="https://github.com/gsd3247186514-cell/gao-conjectures">[repo]</a>
-  </p>
+
+  <div class="pub">
+    <span class="pub-title">Low-Rank Decomposition for Genome-Scale Causal Discovery</span>
+    <span class="pub-status status-prep">In Preparation</span>
+    <div class="pub-meta">
+      S. Gao (2026). Target: ICLR 2027.
+      <a href="https://github.com/gsd3247186514-cell/cdsm">[code]</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">Fiscal Channel Lock-in: Why Digital Finance Fails to Boost Innovation Quality in China</span>
+    <span class="pub-status status-review">Under Review</span>
+    <div class="pub-meta">
+      S. Gao (2026). Submitted to <em>Journal of Digital Economy</em>.
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">Government Size Moderation in Digital Finance&#8211;Innovation Nexus</span>
+    <span class="pub-status status-review">Under Review</span>
+    <div class="pub-meta">
+      S. Gao (2026). Submitted to <em>Journal of Digital Economy</em>.
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">Spatial Innovation Stratification: Digital Finance and Patent Structural Transformation</span>
+    <span class="pub-status status-prep">In Preparation</span>
+    <div class="pub-meta">
+      S. Gao (2026).
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">CA-Gate: Cluster-Aware Mixture of Graph Experts for Node Classification</span>
+    <span class="pub-status status-prep">Preprint</span>
+    <div class="pub-meta">
+      S. Gao (2026). OGB-arxiv leaderboard rank ~27/74.
+      <a href="https://ogb.stanford.edu">[leaderboard]</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">Three Laws of Digital Innovation Lock-in: Mathematical Proofs Across Five Frameworks</span>
+    <span class="pub-status status-prep">Preprint</span>
+    <div class="pub-meta">
+      S. Gao (2026). <a href="https://github.com/gsd3247186514-cell/three-laws-theorem">[code &amp; proofs]</a>
+    </div>
+  </div>
 </div>
 
+<!-- ============================================================ -->
+<!--  PATENTS                                                      -->
+<!-- ============================================================ -->
 <div class="section">
-  <h2>Papers & Preprints</h2>
-  <ul class="paper-list">
-    <li><span class="tag causal">Causal</span> <strong>Cluster-Aware Gating Enables High-Dimensional Causal Discovery Through Phase Transition Resolution</strong> (2026). Nature submission. <a href="https://github.com/gsd3247186514-cell/phase-transition-clustering">[repo]</a></li>
-    <li><span class="tag causal">Causal</span> <strong>Low-Rank Decomposition for Genome-Scale Causal Discovery</strong> (2026). ICLR 2027 submission. <a href="https://github.com/gsd3247186514-cell/cdsm">[repo]</a></li>
-    <li><span class="tag ogb">OGB</span> <strong>CA-Gate: Cluster-Aware Mixture of Graph Experts for Node Classification</strong> (2026). OGB-arxiv rank ~27/74. <a href="https://ogb.stanford.edu">[leaderboard]</a></li>
-    <li><span class="tag main">Main</span> <strong>Digital Finance Innovation Lock-in: Causal Deep Learning Reveals Universal Laws</strong> (2026). Under review. <a href="https://github.com/gsd3247186514-cell/cdsm-innovation-lockin">[repo]</a></li>
-    <li><span class="tag math">Math</span> <strong>Three Laws of Digital Innovation Lock-in: 15 Proofs Across 5 Frameworks</strong> (2026). <a href="https://github.com/gsd3247186514-cell/three-laws-theorem">[repo]</a></li>
-    <li><span class="tag open">Open</span> <strong>Quantum Causal Discovery via Categorical Differentiable Inference</strong> (2026). <a href="https://github.com/gsd3247186514-cell/quantum-causal-discovery">[repo]</a></li>
-    <li><span class="tag open">Open</span> <strong>Gao's Innovation Trilemma: An Open Conjecture</strong> (2026). <a href="https://github.com/gsd3247186514-cell/gao-conjectures">[repo]</a></li>
-    <li>SSCI Series: <em>Fiscal Channel Lock-in</em> (2026a) · <em>Government Size Moderation</em> (2026b) · <em>Spatial Innovation Stratification</em> (2026c). <em>Under review.</em></li>
-  </ul>
+  <h2>Patents</h2>
+
+  <div class="pub">
+    <span class="pub-title">Cluster-Aware Gating Method for Differentiable Causal Structure Learning in High-Dimensional Data</span>
+    <span class="pub-status status-patent">Patent Pending</span>
+    <div class="pub-meta">
+      S. Gao (2026). China Invention Patent &amp; United States Utility Patent (dual-filed). Covers CAGate V2&#8211;V5 framework.
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">Low-Rank Decomposition Accelerated Genome-Scale Causal Discovery System</span>
+    <span class="pub-status status-patent">Patent Pending</span>
+    <div class="pub-meta">
+      S. Gao (2026). China Invention Patent &amp; United States Utility Patent (dual-filed). Covers LowRankGNN V6 framework.
+    </div>
+  </div>
 </div>
 
-<div class="section" style="text-align:center; padding:20px; background:#f5f2eb; border-radius:6px;">
-  <p style="font-size:0.95em; font-style:italic; color:#555;">
-    "功名不过浮云耳，大道从来赤子心。国是千万家，有国才有家！"<br>
-    <span style="font-size:0.85em;">— Shuaidong Gao, on open-sourcing all future work</span>
-  </p>
-</div>
-
+<!-- ============================================================ -->
+<!--  FOOTER                                                       -->
+<!-- ============================================================ -->
 <div class="footer">
-  &copy; 2026 Shuaidong Gao · No-Seed Alliance (无种者联盟) ·
-  <a href="https://github.com/gsd3247186514-cell">GitHub</a> ·
-  <a href="mailto:gsd3247186514@gmail.com">Email</a> ·
-  Built in Chongqing, China
+  &copy; 2026 Shuaidong Gao &#183; Built in Chongqing, China &#183;
+  <a href="https://github.com/gsd3247186514-cell">GitHub</a> &#183;
+  <a href="mailto:gsd3247186514@gmail.com">Email</a>
 </div>
 
 </div>
