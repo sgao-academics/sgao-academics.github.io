@@ -23,13 +23,37 @@ Current research spans:
 | 3 | A Principled Estimator of Intra-Cluster Correlation | SSRN Preprint | [10.2139/ssrn.7103619](https://doi.org/10.2139/ssrn.7103619) |
 | 4 | MM-CDSM: Multi-Modal Causal Discovery | SSRN Preprint | [10.2139/ssrn.7107938](https://doi.org/10.2139/ssrn.7107938) |
 | 5 | Causal Transformer | SSRN Preprint | [10.2139/ssrn.7107958](https://doi.org/10.2139/ssrn.7107958) |
-| 6 | scCausal: Causal Skeleton Discovery from scRNA-seq | Under Review | [GitHub](https://github.com/sgao-academics/scCausal) |
+| 6 | scCausal: Causal Skeleton Discovery from scRNA-seq | Under Review (BioData Mining) | — |
 
 ## Open-Source Projects
 
-- **[causalscale](https://github.com/sgao-academics/causalscale)** — Production-grade causal discovery engine: CAGate, SSCAGate, Causal Transformer, LowRankGNN, genome-scale inference
-- **[scCausal](https://github.com/sgao-academics/scCausal)** — Causal skeleton discovery from single-cell transcriptomics via negative binomial CI testing
-- **[MM-CDSM](https://github.com/sgao-academics/MMCDSM)** — Multi-Modal Causal Discovery with cross-modal consistency constraints
+### Causal Discovery Engine
+
+| Repository | Description |
+|:--|:--|
+| **[causalscale](https://github.com/sgao-academics/causalscale)** | Flagship engine: CAGate → SSCAGate → Causal Transformer → LowRankGNN → genome-scale inference |
+| **[SSCAGate-Nature](https://github.com/sgao-academics/SSCAGate-Nature)** | Phase-transition clustering: 33-cancer TCGA validation, five-modal causal discovery (Nature submission) |
+| **[CausalTransformer](https://github.com/sgao-academics/CausalTransformer)** | Transformer-based causal discovery scaling to 500+ variables |
+| **[lowrank-causal-discovery](https://github.com/sgao-academics/lowrank-causal-discovery)** | Low-rank matrix factorization for high-dimensional causal structure recovery |
+| **[MMCDSM](https://github.com/sgao-academics/MMCDSM)** | Multi-modal causal discovery with cross-modal consistency (BMC Bioinformatics) |
+
+### Diagnostics & Theory
+
+| Repository | Description |
+|:--|:--|
+| **[rho-crossdomain](https://github.com/sgao-academics/rho-crossdomain)** | Diagnostic threshold for differentiable causal discovery across domains |
+| **[lowrank-causal-theory](https://github.com/sgao-academics/lowrank-causal-theory)** | Theoretical foundations of low-rank causal discovery: bias-variance tradeoff proofs |
+| **[CAGate-Replication](https://github.com/sgao-academics/CAGate-Replication)** | Full replication package: cluster-aware gating, 33-cancer benchmark, one-click reproduce |
+
+### Exploratory & Tools
+
+| Repository | Description |
+|:--|:--|
+| **[dark-variable-discovery](https://github.com/sgao-academics/dark-variable-discovery)** | Detecting unobserved confounders from observational data |
+| **[latent-mirror](https://github.com/sgao-academics/latent-mirror)** | Latent variable mirroring for causal structure learning under unmeasured confounding |
+| **[datehub-cancer-network](https://github.com/sgao-academics/datehub-cancer-network)** | Cancer gene regulatory network inference with DateHub integration |
+
+> **30+ public repositories** — full catalogue at [github.com/sgao-academics](https://github.com/sgao-academics?tab=repositories)
 
 ## Contact
 
