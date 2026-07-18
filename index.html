@@ -159,8 +159,8 @@
   <div class="stats">
     <div class="stat"><div class="num">5</div><div class="label">SSRN Preprints</div></div>
     <div class="stat"><div class="num">2</div><div class="label">Patents Pending</div></div>
-    <div class="stat"><div class="num">6</div><div class="label">Papers Submitted</div></div>
-    <div class="stat"><div class="num">3</div><div class="label">Research Directions</div></div>
+    <div class="stat"><div class="num">7</div><div class="label">Papers Submitted</div></div>
+    <div class="stat"><div class="num">30</div><div class="label">Open-Source Repos</div></div>
   </div>
 </div>
 
@@ -169,6 +169,17 @@
 <!-- ============================================================ -->
 <div class="section">
   <h2>Computational Biology &amp; Causal Discovery</h2>
+
+  <div class="pub">
+    <span class="pub-title">SSCAGate: Sample-Size Phase Transition Ends the Hard-vs-Soft Clustering Debate in Causal Discovery</span>
+    <span class="tag tag-review">Under Review</span>
+    <div class="pub-venue">
+      S. Gao (2026). Submitted to <em>Nature</em> (IF 64.8). Five-modal phase-transition validation: TCGA 33 cancers, MNIST, CIFAR-10, PBMC single-cell, 20 Newsgroups.
+    </div>
+    <div class="pub-links">
+      <a href="https://github.com/sgao-academics/SSCAGate-Nature">[github]</a>
+    </div>
+  </div>
 
   <div class="pub">
     <span class="pub-title">scCausal: Causal Skeleton Discovery from Single-Cell Transcriptomics via Negative Binomial Conditional Independence Testing</span>
@@ -182,19 +193,14 @@
   </div>
 
   <div class="pub">
-    <span class="pub-title">Causal Transformer: Scaling Gradient-Based Causal Discovery to 500 Variables</span>
-    <span class="tag tag-ssrn">SSRN Preprint</span>
-    <div class="pub-venue">
-      S. Gao (2026). <em>SSRN</em>. DOI: <a href="https://doi.org/10.2139/ssrn.7107958">10.2139/ssrn.7107958</a>
-    </div>
-  </div>
-
-  <div class="pub">
     <span class="pub-title">MM-CDSM: Multi-Modal Causal Discovery with Cross-Modal Consistency Constraints</span>
     <span class="tag tag-ssrn">SSRN Preprint</span>
     <span class="tag tag-review">Under Review (Nature Portfolio)</span>
     <div class="pub-venue">
       S. Gao (2026). <em>SSRN</em>. DOI: <a href="https://doi.org/10.2139/ssrn.7107938">10.2139/ssrn.7107938</a>
+    </div>
+    <div class="pub-links">
+      <a href="https://github.com/sgao-academics/MMCDSM">[github]</a>
     </div>
   </div>
 
@@ -204,6 +210,21 @@
     <div class="pub-venue">
       S. Gao (2026). <em>SSRN</em>. DOI: <a href="https://doi.org/10.2139/ssrn.7077218">10.2139/ssrn.7077218</a>
     </div>
+    <div class="pub-links">
+      <a href="https://github.com/sgao-academics/lowrank-causal-discovery">[github]</a>
+      <a href="https://github.com/sgao-academics/lowrank-causal-theory">[theory]</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">Causal Transformer: Scaling Gradient-Based Causal Discovery to 500 Variables</span>
+    <span class="tag tag-ssrn">SSRN Preprint</span>
+    <div class="pub-venue">
+      S. Gao (2026). <em>SSRN</em>. DOI: <a href="https://doi.org/10.2139/ssrn.7107958">10.2139/ssrn.7107958</a>
+    </div>
+    <div class="pub-links">
+      <a href="https://github.com/sgao-academics/CausalTransformer">[github]</a>
+    </div>
   </div>
 
   <div class="pub">
@@ -212,6 +233,9 @@
     <div class="pub-venue">
       S. Gao (2026). <em>SSRN</em>. DOI: <a href="https://doi.org/10.2139/ssrn.7103558">10.2139/ssrn.7103558</a>
     </div>
+    <div class="pub-links">
+      <a href="https://github.com/sgao-academics/rho-crossdomain">[github]</a>
+    </div>
   </div>
 
   <div class="pub">
@@ -219,6 +243,20 @@
     <span class="tag tag-ssrn">SSRN Preprint</span>
     <div class="pub-venue">
       S. Gao (2026). <em>SSRN</em>. DOI: <a href="https://doi.org/10.2139/ssrn.7103619">10.2139/ssrn.7103619</a>
+    </div>
+    <div class="pub-links">
+      <a href="https://github.com/sgao-academics/rho-crossdomain">[github]</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <span class="pub-title">CAGate: Cluster-Aware Gating Unlocks Causal Discovery in Real Cancer Data</span>
+    <span class="tag tag-ssrn">Replication Package</span>
+    <div class="pub-venue">
+      S. Gao (2026). Full replication: 33-cancer TCGA benchmark, one-click reproduce.
+    </div>
+    <div class="pub-links">
+      <a href="https://github.com/sgao-academics/CAGate-Replication">[github]</a>
     </div>
   </div>
 
@@ -285,12 +323,16 @@
 <!-- ============================================================ -->
 <div class="section">
   <h2>Open Source</h2>
+
+  <div style="font-size:0.9em; color:var(--muted); margin-bottom:12px;">
+    <strong>Causal Discovery Engine</strong>
+  </div>
   <div class="pub">
-    <span class="pub-title">causalscale</span> — Flagship causal discovery engine: CAGate → SSCAGate → Causal Transformer → LowRankGNN → genome-scale.
+    <span class="pub-title">causalscale</span> — Flagship engine: CAGate → SSCAGate → Causal Transformer → LowRankGNN → genome-scale inference.
     <span class="pub-links"><a href="https://github.com/sgao-academics/causalscale">[github]</a></span>
   </div>
   <div class="pub">
-    <span class="pub-title">SSCAGate-Nature</span> — Phase-transition clustering: 33-cancer TCGA validation, five-modal causal discovery.
+    <span class="pub-title">SSCAGate-Nature</span> — Phase-transition clustering: 33-cancer TCGA validation, five-modal causal discovery (Nature submission).
     <span class="pub-links"><a href="https://github.com/sgao-academics/SSCAGate-Nature">[github]</a></span>
   </div>
   <div class="pub">
@@ -302,8 +344,44 @@
     <span class="pub-links"><a href="https://github.com/sgao-academics/lowrank-causal-discovery">[github]</a></span>
   </div>
   <div class="pub">
+    <span class="pub-title">CAGate-Replication</span> — Full replication package: cluster-aware gating, 33-cancer benchmark, one-click reproduce.
+    <span class="pub-links"><a href="https://github.com/sgao-academics/CAGate-Replication">[github]</a></span>
+  </div>
+
+  <div style="font-size:0.9em; color:var(--muted); margin: 14px 0 12px;">
+    <strong>Multi-Modal &amp; Diagnostics</strong>
+  </div>
+  <div class="pub">
     <span class="pub-title">MMCDSM</span> — Multi-modal causal discovery with cross-modal consistency constraints.
     <span class="pub-links"><a href="https://github.com/sgao-academics/MMCDSM">[github]</a></span>
+  </div>
+  <div class="pub">
+    <span class="pub-title">rho-crossdomain</span> — Diagnostic threshold for differentiable causal discovery across domains.
+    <span class="pub-links"><a href="https://github.com/sgao-academics/rho-crossdomain">[github]</a></span>
+  </div>
+  <div class="pub">
+    <span class="pub-title">lowrank-causal-theory</span> — Theoretical foundations: bias-variance tradeoff proofs for low-rank causal discovery.
+    <span class="pub-links"><a href="https://github.com/sgao-academics/lowrank-causal-theory">[github]</a></span>
+  </div>
+
+  <div style="font-size:0.9em; color:var(--muted); margin: 14px 0 12px;">
+    <strong>Exploratory &amp; Tools</strong>
+  </div>
+  <div class="pub">
+    <span class="pub-title">dark-variable-discovery</span> — Detecting unobserved confounders from observational data.
+    <span class="pub-links"><a href="https://github.com/sgao-academics/dark-variable-discovery">[github]</a></span>
+  </div>
+  <div class="pub">
+    <span class="pub-title">latent-mirror</span> — Latent variable mirroring for causal structure learning under unmeasured confounding.
+    <span class="pub-links"><a href="https://github.com/sgao-academics/latent-mirror">[github]</a></span>
+  </div>
+  <div class="pub">
+    <span class="pub-title">datehub-cancer-network</span> — Cancer gene regulatory network inference with DateHub integration.
+    <span class="pub-links"><a href="https://github.com/sgao-academics/datehub-cancer-network">[github]</a></span>
+  </div>
+
+  <div style="margin-top: 12px; font-size: 0.82em; color: var(--light);">
+    <a href="https://github.com/sgao-academics?tab=repositories" style="color: var(--link);">→ View all 30 repositories on GitHub</a>
   </div>
 </div>
 
