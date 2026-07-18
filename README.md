@@ -18,12 +18,14 @@ Current research spans:
 
 | # | Title | Status | Link |
 |:--|:--|:--|:--|
-| 1 | Low-Rank Causal Discovery | SSRN Preprint | [10.2139/ssrn.7077218](https://doi.org/10.2139/ssrn.7077218) |
-| 2 | A Diagnostic Threshold for Differentiable Causal Discovery | SSRN Preprint | [10.2139/ssrn.7103558](https://doi.org/10.2139/ssrn.7103558) |
-| 3 | A Principled Estimator of Intra-Cluster Correlation | SSRN Preprint | [10.2139/ssrn.7103619](https://doi.org/10.2139/ssrn.7103619) |
-| 4 | MM-CDSM: Multi-Modal Causal Discovery | SSRN Preprint | [10.2139/ssrn.7107938](https://doi.org/10.2139/ssrn.7107938) |
+| 1 | SSCAGate: Phase Transition Ends the Hard-vs-Soft Clustering Debate | Submitted to *Nature* | [SSCAGate-Nature](https://github.com/sgao-academics/SSCAGate-Nature) |
+| 2 | scCausal: Causal Skeleton Discovery from scRNA-seq | Under Review (*BioData Mining*) | [causalscale](https://github.com/sgao-academics/causalscale) |
+| 3 | MM-CDSM: Multi-Modal Causal Discovery | Under Review (Nature Portfolio) | [10.2139/ssrn.7107938](https://doi.org/10.2139/ssrn.7107938) |
+| 4 | Low-Rank Causal Discovery | SSRN Preprint | [10.2139/ssrn.7077218](https://doi.org/10.2139/ssrn.7077218) |
 | 5 | Causal Transformer | SSRN Preprint | [10.2139/ssrn.7107958](https://doi.org/10.2139/ssrn.7107958) |
-| 6 | scCausal: Causal Skeleton Discovery from scRNA-seq | Under Review (BioData Mining) | — |
+| 6 | A Diagnostic Threshold for Differentiable Causal Discovery | SSRN Preprint | [10.2139/ssrn.7103558](https://doi.org/10.2139/ssrn.7103558) |
+| 7 | A Principled Estimator of Intra-Cluster Correlation | SSRN Preprint | [10.2139/ssrn.7103619](https://doi.org/10.2139/ssrn.7103619) |
+| 8 | CAGate: Cluster-Aware Gating for Causal Discovery | Replication Package | [CAGate-Replication](https://github.com/sgao-academics/CAGate-Replication) |
 
 ## Open-Source Projects
 
@@ -35,7 +37,7 @@ Current research spans:
 | **[SSCAGate-Nature](https://github.com/sgao-academics/SSCAGate-Nature)** | Phase-transition clustering: 33-cancer TCGA validation, five-modal causal discovery (Nature submission) |
 | **[CausalTransformer](https://github.com/sgao-academics/CausalTransformer)** | Transformer-based causal discovery scaling to 500+ variables |
 | **[lowrank-causal-discovery](https://github.com/sgao-academics/lowrank-causal-discovery)** | Low-rank matrix factorization for high-dimensional causal structure recovery |
-| **[MMCDSM](https://github.com/sgao-academics/MMCDSM)** | Multi-modal causal discovery with cross-modal consistency (BMC Bioinformatics) |
+| **[MMCDSM](https://github.com/sgao-academics/MMCDSM)** | Multi-modal causal discovery with cross-modal consistency (Nature Portfolio submission) |
 
 ### Diagnostics & Theory
 
